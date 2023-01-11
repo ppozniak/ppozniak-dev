@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "lint-staged": {
-    "**/*": "lint"
+    "**/*": "npm run lint"
   },
   "scripts": {
     "dev": "next dev",
@@ -28,7 +28,7 @@
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^13.1.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.2",
