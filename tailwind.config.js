@@ -28,6 +28,15 @@ module.exports = {
     },
 
     extend: {
+      backgroundImage: {
+        hero: `
+          url('/liquid-cheese.svg'),
+          linear-gradient(114.86deg, #2D0936 14.71%, #170312 78.23%)
+        `,
+      },
+      backgroundSize: {
+        hero: "cover, 100%",
+      },
       container: {
         center: true,
         padding: "1rem",

@@ -3,26 +3,31 @@ import { Container } from "components/container";
 
 export const Hero = () => {
   return (
-    <section className="bg-black min-h-screen text-white">
+    <section className="bg-black bg-hero min-h-screen text-white bg-fixed bg-no-repeat">
       <Container className="flex flex-col md:flex-row md:justify-between pt-24">
-        <div className="">
-          <div className="mb-12 md:mb-24">
-            <p className="text-3xl">Hello there!</p>
+        {/* Left column */}
+        <div className="space-y-16 md:pl-4">
+          {/* Intro */}
+          <div className="space-y-8 leading-none">
+            <p className="text-4xl md:text-5xl">Hello there!</p>
 
-            <h1 className="text-2xl mb-6">
-              I am{" "}
-              <span className="font-bold md:text-4xl">
+            <h1 className="">
+              <p className="">My name is</p>
+              <span className="font-bold max-w-sm text-3xl md:text-4xl">
                 <span className="text-primary">Patryk</span> Pozniak
               </span>
-              , the
             </h1>
 
-            <p className="font-mono text-4xl md:text-5xl max-w-sm">
-              <span className="font-bold">Fullstack </span>
-              <span className="underline">engineer</span>
-            </p>
+            <div>
+              <p>and I am a</p>
+              <p className="font-mono max-w-sm text-4xl md:text-5xl">
+                <span className="font-bold">Fullstack </span>
+                <span className="underline">engineer</span>
+              </p>
+            </div>
           </div>
 
+          {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-4">
             {/* @TODO: This should probably be a link */}
             <Button>Lorem ipsum</Button>
