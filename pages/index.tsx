@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { About } from "../components/sections/about";
 import { Blog } from "../components/sections/blog";
+import { Contact } from "../components/sections/contact";
 import { Hero } from "../components/sections/hero";
 import { Skills } from "../components/sections/skills";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Skills />
       <Blog />
+      <Contact />
     </>
   );
 }
