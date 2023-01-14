@@ -1,3 +1,5 @@
+import { Button } from "../../button";
+
 export const Hero = () => {
   return (
     <section className="bg-black min-h-screen text-white">
@@ -21,13 +23,9 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="rounded bg-primary text-white p-2 max-w-xs">
-              Lorem ipsum
-            </button>
-
-            <button className="rounded bg-white text-black p-2 max-w-xs">
-              Lorem ipsum
-            </button>
+            {/* @TODO: This should probably be a link */}
+            <Button>Lorem ipsum</Button>
+            <Button theme="secondary">Lorem ipsum</Button>
           </div>
         </div>
         {/* @TODO: What about images on mobile? */}
