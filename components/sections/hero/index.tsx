@@ -31,6 +31,7 @@ export const Hero = () => {
         {/* @TODO: What about images on mobile? */}
         <div className="hidden md:block">{/* @TODO: Add images */}</div>
       </div>
+      {/* @TODO: Add wavy border */}
     </section>
   );
 };
