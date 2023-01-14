@@ -3,9 +3,9 @@ import { Button } from "../../button";
 export const Hero = () => {
   return (
     <section className="bg-black min-h-screen text-white">
-      <div className="container flex flex-col md:flex-row pt-24">
+      <div className="container flex flex-col md:flex-row md:justify-between pt-24">
         <div className="">
-          <div className="mb-12 ">
+          <div className="mb-12 md:mb-24">
             <p className="text-3xl">Hello there!</p>
 
             <h1 className="text-2xl mb-6">
@@ -29,7 +29,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* @TODO: What about images on mobile? */}
-        <div className="hidden">{/* Images will be here */}</div>
+        <div className="hidden md:block">{/* @TODO: Add images */}</div>
       </div>
     </section>
   );

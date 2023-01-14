@@ -8,8 +8,8 @@ interface IProps extends ComponentProps<"button"> {
 }
 
 const themeClassName: Record<ButtonTheme, string> = {
-  primary: "bg-primary text-white",
-  secondary: "bg-white text-black",
+  primary: "bg-primary text-white hover:bg-primary-100",
+  secondary: "bg-white text-black hover:bg-grey",
 };
 
 export const Button = ({
@@ -23,7 +23,8 @@ export const Button = ({
     {...rest}
     type={type}
     className={clsx(
-      "rounded-3xl px-4 py-3 max-w-xs font-bold",
+      "rounded-3xl px-4 py-3 max-w-xs font-bold flex-grow",
+      "transition-colors",
       themeClassName[theme],
       className
     )}
