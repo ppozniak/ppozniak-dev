@@ -1,9 +1,10 @@
 import { Button } from "components/button";
+import { Container } from "components/container";
 
 export const Hero = () => {
   return (
     <section className="bg-black min-h-screen text-white">
-      <div className="container flex flex-col md:flex-row md:justify-between pt-24">
+      <Container className="flex flex-col md:flex-row md:justify-between pt-24">
         <div className="">
           <div className="mb-12 md:mb-24">
             <p className="text-3xl">Hello there!</p>
@@ -30,7 +31,7 @@ export const Hero = () => {
         </div>
         {/* @TODO: What about images on mobile? */}
         <div className="hidden md:block">{/* @TODO: Add images */}</div>
-      </div>
+      </Container>
       {/* @TODO: Add wavy border */}
     </section>
   );

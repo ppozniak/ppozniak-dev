@@ -1,8 +1,10 @@
+import { Container } from "components/container";
+
 export const Skills = () => {
   return (
     // @TODO: Add background image
     <section className="bg-yellow text-black min-h-screen">
-      <div className="container py-6">
+      <Container>
         <header className="flex flex-col md:flex-row gap-4 mb-8">
           <h2 className="text-3xl flex-shrink-0">
             <span className="font-bold">Skills</span> and{" "}
@@ -28,7 +30,7 @@ export const Skills = () => {
           repudiandae reiciendis nemo cupiditate, laudantium ea eaque nobis
           quisquam consequuntur saepe tempora quod hic? Dolorum, corporis?
         </p>
-      </div>
+      </Container>
     </section>
   );
 };

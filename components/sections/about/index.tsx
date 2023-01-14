@@ -1,7 +1,9 @@
+import { Container } from "components/container";
+
 export const About = () => {
   return (
     <section className="bg-white text-black">
-      <div className="container flex flex-col md:flex-row justify-between py-6">
+      <Container className="flex flex-col md:flex-row justify-between">
         <div className="basis-1/2 space-y-4">
           <h2 className="text-3xl">
             <span className="font-bold">About</span>{" "}
@@ -26,7 +28,7 @@ export const About = () => {
           </p>
         </div>
         <div className="basis-1/2">{/* @TODO: Add image here */}</div>
-      </div>
+      </Container>
     </section>
   );
 };

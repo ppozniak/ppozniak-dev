@@ -1,9 +1,10 @@
 import { Button } from "components/button";
+import { Container } from "components/container";
 
 export const Blog = () => {
   return (
     <section className="bg-black text-white text-center">
-      <div className="container py-6">
+      <Container>
         <div className="">
           <header className="space-y-4">
             <h2 className="text-3xl">
@@ -24,7 +25,7 @@ export const Blog = () => {
           ....lorem ipsum dolor sit amet{" "}
           <Button className="max-w-[200px]">View all</Button>
         </footer>
-      </div>
+      </Container>
     </section>
   );
 };
