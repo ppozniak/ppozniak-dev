@@ -34,8 +34,8 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["var(--font-ubuntu)", ...fontFamily.sans],
-        mono: ["var(--font-ubuntu-mono)", ...fontFamily.mono],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+        mono: ["var(--font-mono)", ...fontFamily.mono],
       },
     },
   },

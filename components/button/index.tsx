@@ -23,7 +23,7 @@ export const Button = ({
     {...rest}
     type={type}
     className={clsx(
-      "rounded-3xl px-4 py-3 max-w-xs font-bold flex-grow",
+      "rounded-3xl px-4 py-3 max-w-xs font-semibold flex-grow",
       "transition-colors",
       themeClassName[theme],
       className
