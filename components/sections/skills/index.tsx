@@ -1,7 +1,7 @@
 export const Skills = () => {
   return (
     // @TODO: Add background image
-    <section className="bg-yellow text-black">
+    <section className="bg-yellow text-black min-h-screen">
       <div className="container py-6">
         <header className="flex flex-col md:flex-row gap-4 mb-8">
           <h2 className="text-3xl flex-shrink-0">
