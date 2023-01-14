@@ -1,5 +1,6 @@
 import { Button } from "components/button";
 import { Container } from "components/container";
+import { SectionHeading } from "components/section-heading";
 
 export const Blog = () => {
   return (
@@ -7,10 +8,7 @@ export const Blog = () => {
       <Container>
         <div className="">
           <header className="space-y-4">
-            <h2 className="text-3xl">
-              <span className="font-bold">Blog</span>{" "}
-              <span className="underline">posts</span>
-            </h2>
+            <SectionHeading heading="Blog posts" />
             <p className="text-sm max-w-5xl mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               vitae ab, fugiat quisquam exercitationem, natus suscipit sint,

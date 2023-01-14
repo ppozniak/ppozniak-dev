@@ -1,20 +1,20 @@
 import { Container } from "components/container";
+import { SectionHeading } from "components/section-heading";
 
 export const Skills = () => {
   return (
     // @TODO: Add background image
     <section className="bg-yellow text-black min-h-screen">
       <Container>
-        <header className="flex flex-col md:flex-row gap-4 mb-8">
-          <h2 className="text-3xl flex-shrink-0">
-            <span className="font-bold">Skills</span> and{" "}
-            <span className="underline">experiences</span>
-          </h2>
+        <header className="flex flex-col md:flex-row items-center gap-8 mb-8">
+          <SectionHeading
+            className="lg:flex-shrink-0"
+            heading="Skills and experiences"
+          />
           <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
             vitae ab, fugiat quisquam exercitationem, natus suscipit sint, animi
-            totam ipsam tempora atque possimus voluptates odio assumenda
-            inventore! Distinctio ad amet nostrum.
+            totam ipsam tempora atque possimus.
           </p>
         </header>
         <p>

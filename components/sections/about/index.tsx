@@ -1,14 +1,12 @@
 import { Container } from "components/container";
+import { SectionHeading } from "components/section-heading";
 
 export const About = () => {
   return (
     <section className="bg-white text-black">
       <Container className="flex flex-col md:flex-row justify-between">
         <div className="basis-1/2 space-y-4">
-          <h2 className="text-3xl">
-            <span className="font-bold">About</span>{" "}
-            <span className="underline">me</span>
-          </h2>
+          <SectionHeading heading="About me" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
             vitae ab, fugiat quisquam exercitationem, natus suscipit sint, animi
