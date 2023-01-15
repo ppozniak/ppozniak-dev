@@ -1,10 +1,12 @@
 import { Button } from "components/button";
 import { Container } from "components/container";
+import { StaticNav } from "components/nav";
 
 export const Hero = () => {
   return (
     <section className="bg-black bg-hero min-h-screen text-white bg-fixed bg-no-repeat">
-      <Container className="flex flex-col md:flex-row md:justify-between pt-24">
+      <StaticNav />
+      <Container className="flex flex-col md:flex-row md:justify-between pt-10">
         {/* Left column */}
         <div className="space-y-16 md:pl-4">
           {/* Intro */}

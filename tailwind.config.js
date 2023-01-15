@@ -13,8 +13,8 @@ module.exports = {
       xl: ["1.5rem", 1.2],
       "2xl": ["2rem", 1.2],
       "3xl": ["2.5rem", 1.2],
-      "4xl": ["3rem", 1.2],
-      "5xl": ["5rem", 1.2],
+      "4xl": ["2.9rem", 1.2],
+      "5xl": ["4.2rem", 1.2],
     },
     colors: {
       primary: "#008FF5",

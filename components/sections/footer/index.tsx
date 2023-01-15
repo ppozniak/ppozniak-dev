@@ -1,4 +1,5 @@
 import { Container } from "components/container";
+import { Logo } from "components/logo";
 
 export const Footer = () => {
   return (
@@ -16,10 +17,11 @@ export const Footer = () => {
           </p>
         </div>
         <div className="text-right basis-1/2">
-          {/* @TODO: Add logo */}
-          Logo
+          <Logo variation="inline" />
           {/* @TODO: Dynamic year */}
-          <div className="font-mono">built with 🖐 and 🧠 | Copyright 2023</div>
+          <div className="font-mono mt-2">
+            built with 🖐 and 🧠 | Copyright 2023
+          </div>
         </div>
       </Container>
     </footer>
