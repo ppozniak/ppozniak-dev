@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="bg-black bg-hero min-h-screen text-white bg-fixed bg-no-repeat">
       <StaticNav />
-      <Container className="flex flex-col md:flex-row md:justify-between pt-10">
+      <Container className="flex flex-col md:flex-row md:justify-between pt-10 xl:pt-32">
         {/* Left column */}
         <div className="space-y-16 md:pl-4">
           {/* Intro */}
