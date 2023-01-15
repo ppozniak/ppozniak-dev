@@ -13,7 +13,7 @@ export const Hero = () => {
 
             <h1 className="">
               <p className="">My name is</p>
-              <span className="font-bold max-w-sm text-3xl md:text-4xl">
+              <span className="font-bold max-w-sm text-3xl md:text-5xl">
                 <span className="text-primary">Patryk</span> Pozniak
               </span>
             </h1>
