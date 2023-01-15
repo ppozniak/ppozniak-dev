@@ -1,31 +1,41 @@
 import { Container } from "components/container";
 import { SectionHeading } from "components/section-heading";
+import Image from "next/image";
+import meme from "public/hacc.jpg";
 
 export const About = () => {
   return (
     <section className="bg-white text-black">
-      <Container className="flex flex-col md:flex-row justify-between">
+      <Container className="flex flex-col md:flex-row justify-between items-center lg:items-start">
         <div className="basis-1/2 space-y-4">
           <SectionHeading heading="About me" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            vitae ab, fugiat quisquam exercitationem, natus suscipit sint, animi
-            totam ipsam tempora atque possimus voluptates odio assumenda
-            inventore! Distinctio ad amet nostrum, doloremque quod reprehenderit
-            provident aliquid et nihil qui nisi rem sit animi aperiam,
-            laudantium obcaecati vel non, necessitatibus illo.
+            Committed and hard-working developer with over{" "}
+            <strong>7 years</strong> of full stack professional experience.
+            Programming since childhood.
           </p>
           <p>
-            Libero voluptatibus similique rem perspiciatis dolorem ipsa! Eos,
-            quis, neque aspernatur, dolorem qui ipsum nesciunt voluptatibus
-            temporibus perspiciatis tempore amet! Eligendi, aperiam doloremque.
-            Eum nulla dolor similique excepturi perspiciatis? Veritatis
-            doloremque labore provident! Dicta earum harum fugiat quas a,
-            ratione corrupti odio, alias cum itaque rem, saepe officiis ullam
-            quibusdam.
+            I&apos;m passionate about growth in both myself and through
+            mentoring others. Keen proponent of code reviews, knowledge sharing
+            and deepening my back end and architectural experience.
+          </p>
+          <p>
+            Interested in Healtech (especially <strong>mental health</strong>)
+            and education industries.
           </p>
         </div>
-        <div className="basis-1/2">{/* @TODO: Add image here */}</div>
+        <div className="basis-1/2 text-right">
+          <figure className=" overflow-hidden p-4 ml-auto max-w-xl">
+            <Image
+              className="rounded-lg shadow-xl"
+              src={meme}
+              alt="A meme saying 'When you first learned HTML': 'hac' "
+            />
+            <figcaption className="text-pastel text-sm">
+              Actual representation
+            </figcaption>
+          </figure>
+        </div>
       </Container>
     </section>
   );
