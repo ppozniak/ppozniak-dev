@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { ComponentProps, ReactNode } from "react";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 
 type ButtonTheme = "primary" | "secondary";
-interface IProps extends ComponentProps<"button"> {
+interface IProps extends ComponentPropsWithoutRef<"button"> {
   children: ReactNode;
   theme?: ButtonTheme;
 }

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .input {
+    @apply rounded-lg border border-black bg-white block py-2 px-4 w-full text-black focus:border-l-8 transition-all outline-none ease-out motion-reduce:focus:border-l-0;
+  }
+}

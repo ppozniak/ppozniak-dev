@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import { ComponentProps } from "react";
+import { ComponentPropsWithoutRef } from "react";
 
-interface IProps extends ComponentProps<"h2"> {
+interface IProps extends ComponentPropsWithoutRef<"h2"> {
   heading: string;
 }
 
