@@ -10,11 +10,11 @@ module.exports = {
     fontSize: {
       sm: ["1rem", 1.2],
       base: ["1.12rem", 1.2],
-      xl: ["1.5rem", 1.2],
-      "2xl": ["2rem", 1.2],
-      "3xl": ["2.5rem", 1.2],
-      "4xl": ["2.9rem", 1.2],
-      "5xl": ["4.2rem", 1.2],
+      md: ["1.5rem", 1.2],
+      lg: ["2rem", 1.2],
+      xl: ["2.5rem", 1.2],
+      "2xl": ["2.9rem", 1.2],
+      "3xl": ["4.2rem", 1.2],
     },
     colors: {
       primary: "#008FF5",

@@ -27,11 +27,11 @@ export const About = () => {
         <div className="basis-1/2 text-right">
           <figure className=" overflow-hidden p-4 ml-auto max-w-xl">
             <Image
-              className="rounded-lg shadow-xl"
+              className="rounded-lg shadow-sm"
               src={meme}
               alt="A meme saying 'When you first learned HTML': 'hac' "
             />
-            <figcaption className="text-pastel text-sm">
+            <figcaption className="text-pastel text-sm mt-1">
               Actual representation
             </figcaption>
           </figure>
