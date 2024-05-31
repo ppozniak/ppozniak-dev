@@ -1,4 +1,4 @@
-import { Logo } from "components/logo";
+import { Logo } from "src/components/logo";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import clsx from "clsx";

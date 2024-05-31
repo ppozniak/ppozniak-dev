@@ -1,6 +1,6 @@
-import { Button } from "components/button";
-import { Container } from "components/container";
-import { SectionHeading } from "components/section-heading";
+import { Button } from "src/components/button";
+import { Container } from "src/components/container";
+import { SectionHeading } from "src/components/section-heading";
 
 export const Blog = () => {
   return (

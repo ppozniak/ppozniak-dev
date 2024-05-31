@@ -1,7 +1,7 @@
 import "styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Ubuntu_Mono, Montserrat } from "@next/font/google";
+import { Ubuntu_Mono, Montserrat } from "next/font/google";
 import clsx from "clsx";
 
 const montserrat = Montserrat({

@@ -1,5 +1,5 @@
-import { Container } from "components/container";
-import { Logo } from "components/logo";
+import { Container } from "src/components/container";
+import { Logo } from "src/components/logo";
 
 export const Footer = () => {
   return (

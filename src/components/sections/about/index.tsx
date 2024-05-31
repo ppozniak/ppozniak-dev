@@ -1,5 +1,5 @@
-import { Container } from "components/container";
-import { SectionHeading } from "components/section-heading";
+import { Container } from "src/components/container";
+import { SectionHeading } from "src/components/section-heading";
 import Image from "next/image";
 import meme from "public/hacc.jpg";
 
