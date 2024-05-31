@@ -22,7 +22,7 @@ export const Hero = () => {
 
             <div>
               <p>and I am a</p>
-              <p className="font-mono max-w-sm text-2xl md:text-3xl">
+              <p className="max-w-sm text-2xl md:text-3xl">
                 <span className="font-bold">Fullstack </span>
                 <span className="underline">engineer</span>
               </p>
