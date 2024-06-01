@@ -18,7 +18,9 @@ const ubuntuMono = Ubuntu_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ppozniak.dev",
+  title: "Patryk Pozniak - ",
+  description:
+    "Ownership-driven developer with over 8 years of full-stack development experience. Committed to mastering diverse technologies as a generalist to adapt quickly to evolving tech world. Passionate about mentoring, knowledge sharing, and collaborative practices.",
 };
 
 export default function RootLayout({
@@ -28,11 +30,15 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
-      className={clsx(montserrat.variable, ubuntuMono.variable, "font-sans")}
+      lang="en-gb"
+      className={clsx(
+        montserrat.variable,
+        ubuntuMono.variable,
+        "font-sans scroll-smooth",
+      )}
     >
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
       <body>{children}</body>
     </html>

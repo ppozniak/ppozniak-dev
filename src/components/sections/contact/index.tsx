@@ -1,41 +1,52 @@
-"use client";
+import React from "react";
 
-import React, { FormEventHandler } from "react";
-
-import { Button } from "src/components/button";
+import Link from "next/link";
 import { Container } from "src/components/container";
-import { Input } from "src/components/form/input";
-import { Label } from "src/components/form/label";
-import { TextArea } from "src/components/form/textarea";
 import { SectionHeading } from "src/components/section-heading";
 
 export const Contact = () => {
+  /* @TODO: Spam protection needed? */
   // @TODO: Email submit
-  const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
-    event.preventDefault();
-  };
+  // const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
+  //   event.preventDefault();
+  // };
 
   return (
-    <section className="bg-pastel text-white">
+    <section className="bg-pastel text-white" id="contact">
       <Container className="flex flex-col md:flex-row">
         <div className="space-y-4 md:basis-1/2">
           <SectionHeading heading="Contact me" />
           <p>
             Have a question? Want to hire me?
             <br /> Go ahead, I don&apos;t bite.
-            <br /> Use the form below or mail me directly at{" "}
-            {/* @TODO: Spam protection needed? */}
-            <a
+          </p>
+          <p>
+            <br /> Email me at &nbsp;
+            <Link
               href="mailto:ppozniak95@gmail.com"
-              className="font-bold text-primary underline"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="font-bold text-green underline"
             >
               ppozniak95@gmail.com
-            </a>
+            </Link>
+          </p>
+
+          <p>
+            or message me on{" "}
+            <Link
+              href="https://www.linkedin.com/in/patrykpozniak/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="font-bold text-green underline"
+            >
+              LinkedIn
+            </Link>
           </p>
 
           {/* @TODO: Add social links here */}
           <div className="">
-            <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+            {/* <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
               <div>
                 <Label htmlFor="name">Your name</Label>
                 <Input
@@ -71,7 +82,7 @@ export const Contact = () => {
               <Button type="submit" className="ml-auto min-w-[200px]">
                 Submit
               </Button>
-            </form>
+            </form> */}
           </div>
         </div>
 
