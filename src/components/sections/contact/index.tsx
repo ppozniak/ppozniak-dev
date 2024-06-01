@@ -15,7 +15,7 @@ export const Contact = () => {
   return (
     <section className="bg-pastel text-white">
       <Container className="flex flex-col md:flex-row">
-        <div className="md:basis-1/2 space-y-4">
+        <div className="space-y-4 md:basis-1/2">
           <SectionHeading heading="Contact me" />
           <p>
             Have a question? Want to hire me?
@@ -24,7 +24,7 @@ export const Contact = () => {
             {/* @TODO: Spam protection needed? */}
             <a
               href="mailto:ppozniak95@gmail.com"
-              className="text-primary underline font-bold"
+              className="font-bold text-primary underline"
             >
               ppozniak95@gmail.com
             </a>
@@ -65,7 +65,7 @@ export const Contact = () => {
                 ></TextArea>
               </div>
 
-              <Button type="submit" className="min-w-[200px] ml-auto">
+              <Button type="submit" className="ml-auto min-w-[200px]">
                 Submit
               </Button>
             </form>

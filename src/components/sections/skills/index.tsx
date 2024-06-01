@@ -7,7 +7,7 @@ export const Skills = () => {
     // @TODO: Add background image
     <section className="bg-yellow text-black">
       <Container>
-        <header className="flex flex-col md:flex-row items-center gap-8 mb-8">
+        <header className="mb-8 flex flex-col items-center gap-8 md:flex-row">
           <SectionHeading
             className="lg:flex-shrink-0"
             heading="Skills and experiences"
@@ -28,7 +28,7 @@ export const Skills = () => {
           build tools.
         </p>
 
-        <footer className="flex justify-end items-center gap-x-4 text-sm mt-4">
+        <footer className="mt-4 flex items-center justify-end gap-x-4 text-sm">
           {/* @TODO: A link */}
           ...to view job history
           <Button className="max-w-[200px]">Visit LinkedIn</Button>

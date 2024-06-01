@@ -9,21 +9,21 @@ export const StaticNav = () => {
   const toggle = () => setIsOpen((isOpen) => !isOpen);
 
   return (
-    <div className="py-4 border-b border-opacity-30 border-pastel bg-pastel bg-opacity-10 shadow-xl">
+    <div className="border-b border-pastel border-opacity-30 bg-pastel bg-opacity-10 py-4 shadow-xl">
       <div className="container">
-        <nav className="flex justify-between items-center md:justify-start">
+        <nav className="flex items-center justify-between md:justify-start">
           <div className="mr-8">
             <Logo variation="inline" />
           </div>
           {/* @TODO: Finish this */}
-          <button className="hidden basis-12 flex-shrink-0" onClick={toggle}>
+          <button className="hidden flex-shrink-0 basis-12" onClick={toggle}>
             <Bars3Icon className="text-white" />
             {isOpen && "open"}
           </button>
           <ul
             className={clsx(
               "items-center md:flex",
-              isOpen ? "flex" : "hidden"
+              isOpen ? "flex" : "hidden",
               // "fixed top-0 right-0 left-0 flex-col pointer-events-none"
             )}
           >
@@ -31,7 +31,7 @@ export const StaticNav = () => {
               <li key={number} className="grow">
                 <a
                   href={"#" + number.toString()}
-                  className="py-4 px-8 lg:px-12 grow font-bold hover:opacity-70 transition-opacity"
+                  className="grow px-8 py-4 font-bold transition-opacity hover:opacity-70 lg:px-12"
                 >
                   Item
                 </a>

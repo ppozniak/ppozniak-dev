@@ -6,7 +6,7 @@ import meme from "public/hacc.jpg";
 export const About = () => {
   return (
     <section className="bg-white text-black">
-      <Container className="flex flex-col md:flex-row justify-between items-center lg:items-start">
+      <Container className="flex flex-col items-center justify-between md:flex-row lg:items-start">
         <div className="basis-1/2 space-y-4">
           <SectionHeading heading="About me" />
           <p>
@@ -25,13 +25,13 @@ export const About = () => {
           </p>
         </div>
         <div className="basis-1/2 text-right">
-          <figure className=" overflow-hidden p-4 ml-auto max-w-xl">
+          <figure className="ml-auto max-w-xl overflow-hidden p-4">
             <Image
               className="rounded-lg shadow-sm"
               src={meme}
               alt="A meme saying 'When you first learned HTML': 'hac' "
             />
-            <figcaption className="text-pastel text-sm mt-1">
+            <figcaption className="mt-1 text-sm text-pastel">
               Actual representation
             </figcaption>
           </figure>

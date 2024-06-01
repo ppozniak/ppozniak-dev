@@ -4,9 +4,9 @@ import { StaticNav } from "src/components/nav";
 
 export const Hero = () => {
   return (
-    <section className="bg-black bg-hero min-h-screen text-white bg-fixed bg-no-repeat">
+    <section className="min-h-screen bg-black bg-hero bg-fixed bg-no-repeat text-white">
       <StaticNav />
-      <Container className="flex flex-col md:flex-row md:justify-between pt-10 xl:pt-32">
+      <Container className="flex flex-col pt-10 md:flex-row md:justify-between xl:pt-32">
         {/* Left column */}
         <div className="space-y-16 md:pl-4">
           {/* Intro */}
@@ -15,7 +15,7 @@ export const Hero = () => {
 
             <h1 className="">
               <p className="">My name is</p>
-              <span className="font-bold max-w-sm text-xl md:text-3xl">
+              <span className="max-w-sm text-xl font-bold md:text-3xl">
                 <span className="text-primary">Patryk</span> Pozniak
               </span>
             </h1>
@@ -30,7 +30,7 @@ export const Hero = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             {/* @TODO: This should probably be a link */}
             <Button>Lorem ipsum</Button>
             <Button theme="secondary">Lorem ipsum</Button>
