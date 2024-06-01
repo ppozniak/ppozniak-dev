@@ -1,10 +1,13 @@
+"use client";
+
+import React, { FormEventHandler } from "react";
+
 import { Button } from "src/components/button";
 import { Container } from "src/components/container";
 import { Input } from "src/components/form/input";
 import { Label } from "src/components/form/label";
 import { TextArea } from "src/components/form/textarea";
 import { SectionHeading } from "src/components/section-heading";
-import React, { FormEventHandler } from "react";
 
 export const Contact = () => {
   // @TODO: Email submit

@@ -1,7 +1,7 @@
-import { Container } from "src/components/container";
-import { SectionHeading } from "src/components/section-heading";
 import Image from "next/image";
 import meme from "public/hacc.jpg";
+import { Container } from "src/components/container";
+import { SectionHeading } from "src/components/section-heading";
 
 export const About = () => {
   return (

@@ -1,5 +1,6 @@
-import clsx from "clsx";
 import { ComponentPropsWithoutRef } from "react";
+
+import clsx from "clsx";
 
 interface IProps extends ComponentPropsWithoutRef<"textarea"> {}
 

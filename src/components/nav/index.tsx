@@ -1,7 +1,10 @@
-import { Logo } from "src/components/logo";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+"use client";
+
 import { useState } from "react";
+
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
+import { Logo } from "src/components/logo";
 
 // @TODO: Make it fixed? Or create a separate nav for that
 export const StaticNav = () => {
