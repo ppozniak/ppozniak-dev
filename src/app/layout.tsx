@@ -18,7 +18,7 @@ const ubuntuMono = Ubuntu_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Patryk Pozniak - ",
+  title: "ppozniak.dev",
   description:
     "Ownership-driven developer with over 8 years of full-stack development experience. Committed to mastering diverse technologies as a generalist to adapt quickly to evolving tech world. Passionate about mentoring, knowledge sharing, and collaborative practices.",
 };
