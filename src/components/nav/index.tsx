@@ -9,7 +9,7 @@ export const StaticNav = () => {
   // const toggle = () => setIsOpen((isOpen) => !isOpen);
 
   return (
-    <div className="border-b border-pastel border-opacity-30 bg-pastel bg-opacity-10 py-4 shadow-xl">
+    <div className="border-b border-pastel border-opacity-30 bg-pastel bg-opacity-10 py-4 shadow-xl relative z-10">
       <div className="container">
         <nav className="flex items-center justify-between md:justify-start">
           <div className="mr-8">

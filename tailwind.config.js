@@ -28,6 +28,15 @@ module.exports = {
     },
 
     extend: {
+      animation: {
+        "fade-in": "fade-in 4s ease-in forwards",
+      },
+      keyframes: {
+        "fade-in": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
       backgroundImage: {
         hero: `
           url('/liquid-cheese.svg'),
