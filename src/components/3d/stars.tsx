@@ -52,8 +52,8 @@ function Stars() {
   const pointsRef = useRef<ThreePoints>(null!);
 
   useFrame((state, delta) => {
-    pointsRef.current.rotation.y += delta / 10;
-    pointsRef.current.rotation.z += delta / 10;
+    pointsRef.current.rotation.y += delta / 100;
+    pointsRef.current.rotation.z += delta / 100;
   });
 
   return (
@@ -68,7 +68,7 @@ function Stars() {
         vertexColors
         color="#fff"
         transparent
-        size={0.005}
+        size={0.009}
         depthWrite={false}
         sizeAttenuation={true}
       />
