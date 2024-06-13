@@ -4,7 +4,10 @@ import { useRef, useState } from "react";
 
 import { PointMaterial, Points } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { MathUtils, Points as ThreePoints } from "three";
+import { randomStarfield } from "src/utils/three-utils";
+import { Points as ThreePoints } from "three";
+
+const STARS_N = 10000;
 
 export function Stars3D() {
   return (
@@ -16,38 +19,7 @@ export function Stars3D() {
 }
 
 function Stars() {
-  const randomVertices = () => {
-    const NUMBER_OF_PARTICLES = 10000;
-    const MAX_SPREAD = 7;
-
-    const positions = new Float32Array(NUMBER_OF_PARTICLES * 3);
-    const colors = new Float32Array(NUMBER_OF_PARTICLES * 3);
-
-    for (let i = 0; i < NUMBER_OF_PARTICLES; i++) {
-      const x = MathUtils.randFloatSpread(MAX_SPREAD);
-      const y = MathUtils.randFloatSpread(MAX_SPREAD);
-      const z = MathUtils.randFloatSpread(MAX_SPREAD);
-
-      positions[i] = x;
-      positions[i + 1] = y;
-      positions[i + 2] = z;
-
-      const r = Math.random();
-      const g = Math.random();
-      const b = Math.random();
-
-      colors[i] = r;
-      colors[i + 1] = g;
-      colors[i + 2] = b;
-    }
-
-    return {
-      positions,
-      colors,
-    };
-  };
-
-  const [{ positions, colors }] = useState(() => randomVertices());
+  const [{ positions, colors }] = useState(() => randomStarfield(STARS_N));
 
   const pointsRef = useRef<ThreePoints>(null!);
 
@@ -60,17 +32,17 @@ function Stars() {
     <Points
       ref={pointsRef}
       positions={positions}
-      frustumCulled={false}
       colors={colors}
+      frustumCulled={false}
       stride={3}
     >
       <PointMaterial
-        vertexColors
         color="#fff"
         transparent
-        size={0.009}
+        size={0.01}
         depthWrite={false}
         sizeAttenuation={true}
+        toneMapped={false}
       />
     </Points>
   );

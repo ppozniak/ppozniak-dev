@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section className="bg-white text-black" id="about">
       <Container className="flex flex-col items-center justify-between md:flex-row lg:items-start">
-        <div className="basis-1/2 space-y-4">
+        <div className="basis-1/2 space-y-4 max-w-prose text-balance">
           <SectionHeading heading="About me" />
           <p>
             <strong>Ownership-driven</strong> developer with over 8 years of
